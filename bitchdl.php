@@ -34,7 +34,7 @@ fputs($file, $file_data);
 fclose($file);
 
 function escape_filename($in) {
-    return preg_replace('/[^A-Za-z0-9_\-]/', '_', $in);
+    return preg_replace('/[^A-Za-z0-9 _\-]/', '_', $in);
 }
 
 function string_extract_urls($str) {
